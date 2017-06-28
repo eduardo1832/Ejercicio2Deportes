@@ -1,5 +1,3 @@
-package org.umg.deportes;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -10,8 +8,8 @@ public class Menu {
 
  private ArrayList deportes;
 
- Menu () {
-     deportes = new ArrayList<Deportes>();
+ Menu() {
+     deportes = new ArrayList<Deporte>();
 
  }
 
@@ -37,7 +35,7 @@ public class Menu {
       System.out.println("Utiliza balon?");
       usaBalon = Boolean.parseBoolean(in.next());
 
-      Deportes depo = new Deportes(deporte, usaBalon);
+      Deporte depo = new Deporte(deporte, usaBalon);
       deportes.add(depo);
   }
 
